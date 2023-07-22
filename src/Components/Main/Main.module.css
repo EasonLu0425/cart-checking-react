@@ -1,0 +1,30 @@
+main {
+  margin: 1rem;
+  
+}
+
+.mainContentWrapper {
+    display: block;
+    margin: 0 auto;
+  }
+
+@media screen and (min-width: 426px) {
+  .mainContentWrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "form kart"
+      "btn kart";
+    grid-gap: 3rem;
+    margin: 0 auto;
+  }
+
+  .checkingPart {
+    grid-area: form;
+  }
+
+  .cartPart {
+    grid-area: kart;
+    margin: 20% 1rem;
+  }
+}

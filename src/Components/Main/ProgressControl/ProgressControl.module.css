@@ -1,0 +1,40 @@
+.btnControl {
+  display: flex;
+  border-top: 1px solid #e6e6eb;
+  padding-top: 24px;
+  margin: 32px 2rem;
+}
+
+.btnOutline {
+  margin-right: 112px;
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+}
+
+.btnOutline::before {
+  content: "\2190";
+  padding-right: 16px;
+}
+.btnOutline:hover {
+  border: 1px solid #e6e6eb;
+}
+
+.btnPrimary {
+  margin: 0 auto;
+  width: 100%;
+  height: 46px;
+  background-color: #f67599;
+  border: none;
+  border-radius: 8px;
+}
+
+.btnPrimary:hover {
+  border: 1px solid #e6e6eb;
+}
+
+.btnPrimary::after {
+  content: "\2192";
+  padding-left: 16px;
+}

@@ -1,0 +1,64 @@
+select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input1 {
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mrms {
+  flex: 1;
+}
+.name {
+  flex: 2;
+}
+
+.input2 {
+  display: flex;
+  flex-flow: column;
+  padding: 0px;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.phone {
+  margin-right: 0;
+}
+
+.phone,
+.email {
+  flex: 2;
+}
+
+.input3 {
+  display: flex;
+  flex-flow: column;
+  padding: 0px;
+}
+
+.city {
+  flex: 1;
+}
+
+.adress {
+  flex: 2;
+}
+
+@media screen and (min-width: 426px) {
+  .input2 {
+    flex-flow: row;
+  }
+  .phone {
+    margin-right: 1rem;
+  }
+  .input3 {
+    display: flex;
+    flex-flow: row;
+    padding: 0px;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,27 @@
+form {
+  margin: 0 2rem;
+}
+
+.formItemsWrapper {
+  margin: 1rem 3rem;
+}
+
+input,
+select {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+}
+
+@media screen and (min-width:426px) {
+
+
+  
+}

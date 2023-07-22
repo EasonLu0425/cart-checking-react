@@ -1,0 +1,73 @@
+
+
+.stepperContainer {
+  width: 100%;
+  margin: 24px auto;
+  display: flex;
+  padding: 0px;
+  margin-right: 32px;
+}
+
+.step {
+  display: flex;
+  text-align: center;
+  line-height: 32px;
+  position: relative;
+  flex: 1;
+  margin-left: 32px;
+}
+
+.step:nth-child(1) > .circleContainer::after {
+  content: "1";
+}
+
+.step:nth-child(2) > .circleContainer::after {
+  content: "2";
+}
+
+.step:nth-child(3) > .circleContainer::after {
+  content: "3";
+  margin-right: 0;
+}
+
+.circleContainer {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #afb1bd;
+  border-radius: 23px;
+  margin: 0 auto;
+}
+
+.connectLine {
+  display: block;
+  height: 2px;
+  background-color: #f0f0f5;
+  position: absolute;
+  top: 16px;
+  left: calc(-50%);
+  right: calc(50% + 32px);
+}
+
+.active > .circleContainer,
+.active > .connectLine {
+  background-color: #2a2a2a;
+}
+
+.active > .circleContainer::after {
+  color: #ffffff;
+}
+
+.labelContainer {
+  display: none;
+}
+
+@media screen and (min-width: 376px) {
+  .step {
+    display: flex;
+    flex-direction: column;
+  }
+  .labelContainer {
+    display: block;
+  }
+
+}
