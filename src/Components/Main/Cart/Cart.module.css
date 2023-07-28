@@ -27,6 +27,16 @@
   align-items: center;
 }
 
+.btnControl {
+  cursor: pointer;
+}
+
+.btnControl:hover {
+  fill:red
+}
+
+
+
 .productCount {
   padding: 0 15px;
   font-weight: normal;
@@ -45,4 +55,8 @@
   height: 40px;
   padding: 0 20px;
   margin-bottom: 30px;
+}
+
+.price, .text{
+    font-weight: 700;
 }
