@@ -1,5 +1,10 @@
-import style from './Step2.module.css'
-export function Step2 () {
+import { useContext } from "react";
+import { ShippingContext } from "../../../../Context/ShippingContext";
+import style from "./Step2.module.css";
+
+export function Step2() {
+  const { shippingCost, onShippingChange } =
+    useContext(ShippingContext);
   return (
     <div className={style.step2}>
       <h2>運送方式</h2>
@@ -10,7 +15,8 @@ export function Step2 () {
           id="standard-dilivery"
           name="dilivery"
           value="0"
-          defaultChecked
+          checked={shippingCost === 0}
+          onChange={(e) => onShippingChange(e.target.value)}
         />
         <div className="dilivery-text">
           <label htmlFor="standard-dilivery">標準運送</label>
@@ -25,6 +31,8 @@ export function Step2 () {
           id="DHL-dilivery"
           name="dilivery"
           value="500"
+          checked={shippingCost === 500}
+          onChange={(e) => onShippingChange(e.target.value)}
         />
         <div className="dilivery-text">
           <label htmlFor="DHL-dilivery">DHL運貨</label>
